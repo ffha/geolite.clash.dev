@@ -1,4 +1,4 @@
-# geolite.clash.dev
+# geolite.090124.xyz
 
 A MaxMind GeoLite Mirror.
 
@@ -11,13 +11,28 @@ This repository includes [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite
 ## Download
 
 ``` plain
-https://geolite.clash.dev/version
+https://geolite.090124.xyz/version
 ```
 
 ``` plain
-https://geolite.clash.dev/GeoLite2-Country.tar.gz
+https://geolite.090124.xyz/GeoLite2-Country.tar.gz
 ```
 
 ``` plain
-https://geolite.clash.dev/Country.mmdb
+https://geolite.090124.xyz/Country.mmdb
 ```
+``` plain
+https://geolite.090124.xyz/GeoLite2-City.tar.gz
+```
+
+``` plain
+https://geolite.090124.xyz/City.mmdb
+```
+``` plain
+https://geolite.090124.xyz/GeoLite2-ASN.tar.gz
+```
+``` plain
+https://geolite.090124.xyz/ASN.mmdb
+```
+
+
