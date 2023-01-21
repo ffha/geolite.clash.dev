@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
   push:
     branches: [ "master" ]
-
+permissions: write-all
 env:
   LICENSE_KEY: ${{ secrets.GEOLITE_LICENSE_KEY }}
   GITHUB_USER: ${{ github.actor }}
-  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_EMAIL: ${{ github.actor }}@users.noreply.github.com
 
 jobs:
   build:
