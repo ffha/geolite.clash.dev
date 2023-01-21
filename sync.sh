@@ -36,7 +36,7 @@ git init
 git config --global push.default matching
 git config --global user.email "${GITHUB_EMAIL}"
 git config --global user.name "${GITHUB_USER}"
-git remote add origin https://${GITHUB_TOKEN}@github.com/${GITHUB_USER}/geolite-mirror.git
+git remote add origin https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER}/geolite-mirror.git
 git checkout -b gh-pages
 cp -rf ../public/* ./
 git add --all .
