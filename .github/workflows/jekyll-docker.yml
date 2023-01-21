@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Sync CI
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Checkout & Install
-      run: sudo apt clean all && sudo apt -qq -y update && sudo apt install -y axel && chmod 755 sync.sh
+      run: sudo apt-get clean all && sudo apt-get -qq -y update && sudo apt-get install -y axel && chmod 755 sync.sh
      
     - name: Sync
       run: ./sync.sh
