@@ -10,9 +10,9 @@ cd ./public
 wget -q -O ./GeoLite2-Country.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=${LICENSE_KEY}&suffix=tar.gz"
 wget -q -O ./GeoLite2-ASN.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-ASN&license_key=${LICENSE_KEY}&suffix=tar.gz"
 wget -q -O ./GeoLite2-City.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=${LICENSE_KEY}&suffix=tar.gz"
-tar zxvf ./GeoLite2-Country.tar.gz -C .
-tar zxvf ./GeoLite2-ASN.tar.gz -C .
-tar zxvf ./GeoLite2-City.tar.gz -C .
+tar xzf ./GeoLite2-Country.tar.gz -C .
+tar xzf ./GeoLite2-ASN.tar.gz -C .
+tar xzf ./GeoLite2-City.tar.gz -C .
 
 
 VERSION=$(ls | grep 'GeoLite2-Country_' | sed "s|GeoLite2-Country_||g" | tr -d '\n')
