@@ -1,0 +1,22 @@
+name: Jekyll site CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "master" ]
+env:
+  LICENSE_KEY: ${{ secrets.GEOLITE_LICENSE_KEY }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Checkout & Install
+      run: sudo apt clean all && sudo apt -qq -y update && sudo apt install -y axel && chmod 755 sync.sh
+     
+    - name: Sync
+      run: ./sync.sh
+      
+      
