@@ -5,7 +5,7 @@ A MaxMind GeoLite Mirror.
 This repository includes [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite2/) data created by [MaxMind](https://www.maxmind.com).
 
 ## Sync Status
-[![Sync CI](https://github.com/ffha/geolite-mirror/actions/workflows/jekyll-docker.yml/badge.svg)](https://github.com/ffha/geolite-mirror/actions/workflows/jekyll-docker.yml)
+[![Sync CI](https://github.com/ffha/geolite-mirror/actions/workflows/sync.yml/badge.svg)](https://github.com/ffha/geolite-mirror/actions/workflows/sync.yml)
 
 
 ## Download
