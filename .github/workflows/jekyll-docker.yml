@@ -1,10 +1,15 @@
 name: Sync CI
 
 on:
+  schedule:
+     cron: '0 0 * * *'
+
   workflow_dispatch:
   push:
     branches: [ "master" ]
+
 permissions: write-all
+
 env:
   LICENSE_KEY: ${{ secrets.GEOLITE_LICENSE_KEY }}
   GITHUB_USER: ${{ github.actor }}
