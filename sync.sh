@@ -24,7 +24,7 @@ mv ./GeoLite2-City_*/GeoLite2-City.mmdb ./City.mmdb
 rm -rf ./GeoLite2-*_*
 echo $VERSION > version
 
-sed -i "s|## Sync Status|## Sync Status\n\n![](https://img.shields.io/badge/Version-$VERSION-2f8bff.svg?style=for-the-badge)\n![](https://img.shields.io/badge/Last%20Sync-$DATE-blue.svg?style=for-the-badge)|g" README.md
+sed -i "s|## Sync Status|## Sync Status\n\n![](https://img.shields.io/badge/Version-$VERSION-2f8bff.svg)\n![](https://img.shields.io/badge/Last%20Sync-$DATE-blue.svg)|g" README.md
 
 cd ..
 
