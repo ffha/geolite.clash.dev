@@ -12,7 +12,8 @@ permissions: write-all
 
 env:
   LICENSE_KEY: ${{ secrets.GEOLITE_LICENSE_KEY }}
-  GITHUB_TOKEN: ${{ github.token }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_USER: ${{ github.actor }}
 
 jobs:
   sync:
